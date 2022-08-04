@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "@ndiing/crypto": "^1.0.0"
-  }
+  },
+  "name": "@ndiing/jwt",
+  "description": "low level jwt for nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndiing/jwt.git"
+  },
+  "keywords": [
+    "nodejs",
+    "jwt",
+    "jsonwebtoken",
+    "token"
+  ],
+  "author": "ndiing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndiing/jwt/issues"
+  },
+  "homepage": "https://github.com/ndiing/jwt#readme"
 }
