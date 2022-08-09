@@ -1,12 +1,8 @@
 {
-  "dependencies": {
-    "@ndiing/crypto": "^1.0.0"
-  },
   "name": "@ndiing/jwt",
-  "description": "Nodejs JSON Web Token module",
-  "version": "1.0.3",
+  "version": "2.0.0",
+  "description": "nodejs json web token module",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "exit 0"
   },
@@ -17,13 +13,15 @@
   "keywords": [
     "nodejs",
     "jwt",
-    "jsonwebtoken",
-    "token"
+    "jsonwebtoken"
   ],
   "author": "ndiing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ndiing/jwt/issues"
   },
-  "homepage": "https://github.com/ndiing/jwt#readme"
+  "homepage": "https://github.com/ndiing/jwt#readme",
+  "dependencies": {
+    "@ndiing/crypto": "^2.0.0"
+  }
 }
