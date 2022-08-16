@@ -1,444 +1,196 @@
-const Crypto = require('@ndiing/crypto');
+const Crypto = require("@ndiinginc/crypto");
 const crypto = require("crypto");
 
-/**
- * ### Install
- * ```
- * npm install @ndiing/jwt
- * ```
- * @see {@link ./test.js}
- * @module JWT
- */
+// [
+//     { value: "HS256", },
+//     { value: "HS384" },
+//     { value: "HS512" },
+//     { value: "RS256" },
+//     { value: "RS384" },
+//     { value: "RS512" },
+//     { value: "ES256" },
+//     { value: "ES384" },
+//     { value: "ES512" },
+//     { value: "PS256" },
+//     { value: "PS384" },
+//     { value: "PS512" },
+// ];
 
-/**
- *
- */
 class Signer {
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
+    // alg
+
     static HS256(data, options = {}) {
         const { algorithm = "sha256", secret: key, encoding = "base64url" } = options;
-        options = { algorithm, key, encoding };
-        return Crypto.hmac(data, options);
+        return Crypto.hmac(data, { algorithm, key, encoding });
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static HS384(data, options = {}) {
-        const { algorithm = "sha384", secret: key, encoding = "base64url" } = options;
-        options = { algorithm, key, encoding };
-        return Crypto.hmac(data, options);
+        options.algorithm = "sha384";
+        return this.HS256(data, options);
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static HS512(data, options = {}) {
-        const { algorithm = "sha512", secret: key, encoding = "base64url" } = options;
-        options = { algorithm, key, encoding };
-        return Crypto.hmac(data, options);
+        options.algorithm = "sha512";
+        return this.HS256(data, options);
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static RS256(data, options = {}) {
-        const { algorithm = "sha256", secret: { privateKey } = {}, encoding = "base64url" } = options;
-        options = { algorithm, privateKey, encoding };
-        return Crypto.sign(data, options);
+        const {
+            algorithm = "sha256",
+            secret: { privateKey },
+            encoding = "base64url",
+        } = options;
+        return Crypto.sign(data, { algorithm, privateKey, encoding });
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static RS384(data, options = {}) {
-        const { algorithm = "sha384", secret: { privateKey } = {}, encoding = "base64url" } = options;
-        options = { algorithm, privateKey, encoding };
-        return Crypto.sign(data, options);
+        options.algorithm = "sha384";
+        return this.RS256(data, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static RS512(data, options = {}) {
-        const { algorithm = "sha512", secret: { privateKey } = {}, encoding = "base64url" } = options;
-        options = { algorithm, privateKey, encoding };
-        return Crypto.sign(data, options);
+        options.algorithm = "sha512";
+        return this.RS256(data, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static ES256(data, options = {}) {
-        const { algorithm = "sha256", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding;
-        var saltLength;
-        var dsaEncoding = "ieee-p1363";
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.sign(data, options);
+        const { algorithm = "sha256", secret, encoding = "base64url" } = options;
+        const privateKey = {};
+        privateKey.key = secret.privateKey;
+        privateKey.dsaEncoding = "ieee-p1363";
+        privateKey.padding = crypto.constants.RSA_PKCS1_PADDING;
+        privateKey.saltLength = crypto.constants.RSA_PSS_SALTLEN_DIGEST;
+        return Crypto.sign(data, { algorithm, privateKey, encoding });
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static ES384(data, options = {}) {
-        const { algorithm = "sha384", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding;
-        var saltLength;
-        var dsaEncoding = "ieee-p1363";
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.sign(data, options);
+        options.algorithm = "sha384";
+        return this.ES256(data, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static ES512(data, options = {}) {
-        const { algorithm = "sha512", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding;
-        var saltLength;
-        var dsaEncoding = "ieee-p1363";
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.sign(data, options);
+        options.algorithm = "sha512";
+        return this.ES256(data, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static PS256(data, options = {}) {
-        const { algorithm = "sha256", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
-        var saltLength;
-        var dsaEncoding;
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.sign(data, options);
+        const { algorithm = "sha256", secret, encoding = "base64url" } = options;
+        const privateKey = {};
+        privateKey.key = secret.privateKey;
+        privateKey.padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
+        return Crypto.sign(data, { algorithm, privateKey, encoding });
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static PS384(data, options = {}) {
-        const { algorithm = "sha384", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
-        var saltLength;
-        var dsaEncoding;
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.sign(data, options);
+        options.algorithm = "sha384";
+        return this.PS256(data, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {String}
-     */
     static PS512(data, options = {}) {
-        const { algorithm = "sha512", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
-        var saltLength;
-        var dsaEncoding;
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.sign(data, options);
+        options.algorithm = "sha512";
+        return this.PS256(data, options);
     }
 }
-
-/**
- *
- */
 class Verifier {
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
+    // alg
+
     static HS256(data, signature, options = {}) {
         const { algorithm = "sha256", secret: key, encoding = "base64url" } = options;
-        options = { algorithm, key, encoding };
-        return Crypto.hmac(data, options) == signature;
+        return signature == Crypto.hmac(data, { algorithm, key, encoding });
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static HS384(data, signature, options = {}) {
-        const { algorithm = "sha384", secret: key, encoding = "base64url" } = options;
-        options = { algorithm, key, encoding };
-        return Crypto.hmac(data, options) == signature;
+        options.algorithm = "sha384";
+        return this.HS256(data, signature, options);
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static HS512(data, signature, options = {}) {
-        const { algorithm = "sha512", secret: key, encoding = "base64url" } = options;
-        options = { algorithm, key, encoding };
-        return Crypto.hmac(data, options) == signature;
+        options.algorithm = "sha512";
+        return this.HS256(data, signature, options);
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static RS256(data, signature, options = {}) {
-        const { algorithm = "sha256", secret: { privateKey } = {}, encoding = "base64url" } = options;
-        options = { algorithm, privateKey, encoding };
-        return Crypto.verify(data, signature, options);
+        const {
+            algorithm = "sha256",
+            secret: { privateKey },
+            encoding = "base64url",
+        } = options;
+        return Crypto.verify(data, signature, { algorithm, privateKey, encoding });
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static RS384(data, signature, options = {}) {
-        const { algorithm = "sha384", secret: { privateKey } = {}, encoding = "base64url" } = options;
-        options = { algorithm, privateKey, encoding };
-        return Crypto.verify(data, signature, options);
+        options.algorithm = "sha384";
+        return this.RS256(data, signature, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static RS512(data, signature, options = {}) {
-        const { algorithm = "sha512", secret: { privateKey } = {}, encoding = "base64url" } = options;
-        options = { algorithm, privateKey, encoding };
-        return Crypto.verify(data, signature, options);
+        options.algorithm = "sha512";
+        return this.RS256(data, signature, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static ES256(data, signature, options = {}) {
-        const { algorithm = "sha256", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding;
-        var saltLength;
-        var dsaEncoding = "ieee-p1363";
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.verify(data, signature, options);
+        const { algorithm = "sha256", secret, encoding = "base64url" } = options;
+        const privateKey = {};
+        privateKey.key = secret.privateKey;
+        privateKey.dsaEncoding = "ieee-p1363";
+        privateKey.padding = crypto.constants.RSA_PKCS1_PADDING;
+        privateKey.saltLength = crypto.constants.RSA_PSS_SALTLEN_DIGEST;
+        return Crypto.verify(data, signature, { algorithm, privateKey, encoding });
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static ES384(data, signature, options = {}) {
-        const { algorithm = "sha384", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding;
-        var saltLength;
-        var dsaEncoding; //='ieee-p1363';
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.verify(data, signature, options);
+        try {
+            options.algorithm = "sha384";
+            return this.ES256(data, signature, options);
+        } catch (error) {
+            return false;
+        }
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static ES512(data, signature, options = {}) {
-        const { algorithm = "sha512", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding;
-        var saltLength;
-        var dsaEncoding; //='ieee-p1363';
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.verify(data, signature, options);
+        try {
+            options.algorithm = "sha512";
+            return this.ES256(data, signature, options);
+        } catch (error) {
+            return false;
+        }
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static PS256(data, signature, options = {}) {
-        const { algorithm = "sha256", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
-        var saltLength;
-        var dsaEncoding;
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.verify(data, signature, options);
+        const { algorithm = "sha256", secret, encoding = "base64url" } = options;
+        const privateKey = {};
+        privateKey.key = secret.privateKey;
+        privateKey.padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
+        return Crypto.verify(data, signature, { algorithm, privateKey, encoding });
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static PS384(data, signature, options = {}) {
-        const { algorithm = "sha384", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
-        var saltLength;
-        var dsaEncoding;
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.verify(data, signature, options);
+        options.algorithm = "sha384";
+        return this.PS256(data, signature, options);
     }
-
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @param {String/Object} options.secret
-     * @returns {Boolean}
-     */
     static PS512(data, signature, options = {}) {
-        const { algorithm = "sha512", secret: { privateKey: key } = {}, encoding = "base64url" } = options;
-        var padding = crypto.constants.RSA_PKCS1_PSS_PADDING;
-        var saltLength;
-        var dsaEncoding;
-        options = { algorithm, privateKey: { key, padding, saltLength, dsaEncoding }, encoding };
-        return Crypto.verify(data, signature, options);
+        options.algorithm = "sha512";
+        return this.PS256(data, signature, options);
     }
 }
 
-/**
- *
- */
+// https://www.rfc-editor.org/rfc/rfc7519.html
 class JWT {
-    /**
-     *
-     * @param {Object} data
-     * @param {Object} options
-     * @param {Object} options.headers
-     * @param {String} options.headers.alg
-     * @param {String} options.headers.typ
-     * @param {String/Object} options.secret
-     * @param {String/Object} options.secret.privateKey
-     * @returns {String}
-     */
     static encode(data, options = {}) {
-        let { headers } = options;
-        headers = JSON.stringify(headers);
-        headers = Crypto.base64UrlEncode(headers);
-        data = JSON.stringify(data);
-        data = Crypto.base64UrlEncode(data);
-        const message = `${headers}.${data}`;
-        const signature = this.sign(message, options);
-        return `${message}.${signature}`;
+        const { headers } = options;
+        var _data = JSON.stringify(data);
+        _data = Crypto.base64UrlEncode(_data);
+        var _headers = JSON.stringify(headers);
+        _headers = Crypto.base64UrlEncode(_headers);
+        var signature = this.sign([_headers, _data].join("."), options);
+        return [_headers, _data, signature].join(".");
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @returns {Object}
-     */
     static decode(data, options = {}) {
-        [, data] = data.split(".");
-        data = Crypto.base64Decode(data);
-        data = JSON.parse(data);
-        return data;
+        let headers, signature;
+        [headers, data, signature] = data.split(".");
+        data = Crypto.base64UrlDecode(data);
+        return JSON.parse(data);
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {Object} options
-     * @returns {String}
-     */
     static sign(data, options = {}) {
-        let headers;
-        [headers, data] = data.split(".");
-        const { alg } = JSON.parse(Crypto.base64UrlDecode(headers));
-        const message = `${headers}.${data}`;
-        return Signer[alg](message, options);
+        let headers, signature;
+        [headers, data, signature] = data.split(".");
+        let { alg } = JSON.parse(Crypto.base64UrlDecode(headers));
+        return Signer[alg]([headers, data].join("."), options);
     }
 
-    /**
-     *
-     * @param {String} data
-     * @param {String} signature
-     * @param {Object} options
-     * @returns {Boolean}
-     */
     static verify(data, signature, options = {}) {
         let headers;
         [headers, data] = data.split(".");
-        const { alg } = JSON.parse(Crypto.base64UrlDecode(headers));
-        const message = `${headers}.${data}`;
-        return Verifier[alg](message, signature, options);
+        let { alg } = JSON.parse(Crypto.base64UrlDecode(headers));
+        return Verifier[alg]([headers, data].join("."), signature, options);
     }
 }
 
-JWT.Signer = Signer;
-JWT.Verifier = Verifier;
 module.exports = JWT;
-
-// jsdoc2md jwt/index.js > jwt/README.md
