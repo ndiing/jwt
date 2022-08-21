@@ -1,22 +1,37 @@
 const Crypto = require("@ndiinginc/crypto");
 const crypto = require("crypto");
 
+/**
+ *
+ */
 class Signer {
+    /**
+     *
+     */
     static HS256(data, options = {}) {
         const { algorithm = "sha256", secret: key, encoding = "base64url" } = options;
         return Crypto.hmac(data, { algorithm, key, encoding });
     }
 
+    /**
+     *
+     */
     static HS384(data, options = {}) {
         options.algorithm = "sha384";
         return this.HS256(data, options);
     }
 
+    /**
+     *
+     */
     static HS512(data, options = {}) {
         options.algorithm = "sha512";
         return this.HS256(data, options);
     }
 
+    /**
+     *
+     */
     static RS256(data, options = {}) {
         const {
             algorithm = "sha256",
@@ -26,16 +41,25 @@ class Signer {
         return Crypto.sign(data, { algorithm, privateKey, encoding });
     }
 
+    /**
+     *
+     */
     static RS384(data, options = {}) {
         options.algorithm = "sha384";
         return this.RS256(data, options);
     }
 
+    /**
+     *
+     */
     static RS512(data, options = {}) {
         options.algorithm = "sha512";
         return this.RS256(data, options);
     }
 
+    /**
+     *
+     */
     static ES256(data, options = {}) {
         const { algorithm = "sha256", secret, encoding = "base64url" } = options;
         const privateKey = {};
@@ -46,16 +70,25 @@ class Signer {
         return Crypto.sign(data, { algorithm, privateKey, encoding });
     }
 
+    /**
+     *
+     */
     static ES384(data, options = {}) {
         options.algorithm = "sha384";
         return this.ES256(data, options);
     }
 
+    /**
+     *
+     */
     static ES512(data, options = {}) {
         options.algorithm = "sha512";
         return this.ES256(data, options);
     }
 
+    /**
+     *
+     */
     static PS256(data, options = {}) {
         const { algorithm = "sha256", secret, encoding = "base64url" } = options;
         const privateKey = {};
@@ -64,33 +97,54 @@ class Signer {
         return Crypto.sign(data, { algorithm, privateKey, encoding });
     }
 
+    /**
+     *
+     */
     static PS384(data, options = {}) {
         options.algorithm = "sha384";
         return this.PS256(data, options);
     }
 
+    /**
+     *
+     */
     static PS512(data, options = {}) {
         options.algorithm = "sha512";
         return this.PS256(data, options);
     }
 }
 
+/**
+ *
+ */
 class Verifier {
+    /**
+     *
+     */
     static HS256(data, signature, options = {}) {
         const { algorithm = "sha256", secret: key, encoding = "base64url" } = options;
         return signature == Crypto.hmac(data, { algorithm, key, encoding });
     }
 
+    /**
+     *
+     */
     static HS384(data, signature, options = {}) {
         options.algorithm = "sha384";
         return this.HS256(data, signature, options);
     }
 
+    /**
+     *
+     */
     static HS512(data, signature, options = {}) {
         options.algorithm = "sha512";
         return this.HS256(data, signature, options);
     }
 
+    /**
+     *
+     */
     static RS256(data, signature, options = {}) {
         const {
             algorithm = "sha256",
@@ -100,16 +154,25 @@ class Verifier {
         return Crypto.verify(data, signature, { algorithm, privateKey, encoding });
     }
 
+    /**
+     *
+     */
     static RS384(data, signature, options = {}) {
         options.algorithm = "sha384";
         return this.RS256(data, signature, options);
     }
 
+    /**
+     *
+     */
     static RS512(data, signature, options = {}) {
         options.algorithm = "sha512";
         return this.RS256(data, signature, options);
     }
 
+    /**
+     *
+     */
     static ES256(data, signature, options = {}) {
         const { algorithm = "sha256", secret, encoding = "base64url" } = options;
         const privateKey = {};
@@ -120,6 +183,9 @@ class Verifier {
         return Crypto.verify(data, signature, { algorithm, privateKey, encoding });
     }
 
+    /**
+     *
+     */
     static ES384(data, signature, options = {}) {
         try {
             options.algorithm = "sha384";
@@ -129,6 +195,9 @@ class Verifier {
         }
     }
 
+    /**
+     *
+     */
     static ES512(data, signature, options = {}) {
         try {
             options.algorithm = "sha512";
@@ -138,6 +207,9 @@ class Verifier {
         }
     }
 
+    /**
+     *
+     */
     static PS256(data, signature, options = {}) {
         const { algorithm = "sha256", secret, encoding = "base64url" } = options;
         const privateKey = {};
@@ -146,20 +218,30 @@ class Verifier {
         return Crypto.verify(data, signature, { algorithm, privateKey, encoding });
     }
 
+    /**
+     *
+     */
     static PS384(data, signature, options = {}) {
         options.algorithm = "sha384";
         return this.PS256(data, signature, options);
     }
 
+    /**
+     *
+     */
     static PS512(data, signature, options = {}) {
         options.algorithm = "sha512";
         return this.PS256(data, signature, options);
     }
 }
 
-// https://www.rfc-editor.org/rfc/rfc7519.html
-
+/**
+ * @see {@link https://www.rfc-editor.org/rfc/rfc7519.html}
+ */
 class JWT {
+    /**
+     *
+     */
     static encode(data, options = {}) {
         const { headers } = options;
         var _data = JSON.stringify(data);
@@ -170,6 +252,9 @@ class JWT {
         return [_headers, _data, signature].join(".");
     }
 
+    /**
+     *
+     */
     static decode(data, options = {}) {
         let headers, signature;
         [headers, data, signature] = data.split(".");
@@ -177,6 +262,9 @@ class JWT {
         return JSON.parse(data);
     }
 
+    /**
+     *
+     */
     static sign(data, options = {}) {
         let headers, signature;
         [headers, data, signature] = data.split(".");
@@ -184,6 +272,9 @@ class JWT {
         return Signer[alg]([headers, data].join("."), options);
     }
 
+    /**
+     *
+     */
     static verify(data, signature, options = {}) {
         let headers;
         [headers, data] = data.split(".");
