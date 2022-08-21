@@ -1,70 +1,171 @@
 # Signer
 
+<!-- Description -->
+
+
+
+
+
+
 ## [Static methods]()
 
-[`Signer.HS256()`]()
+<!-- _Description_ -->
 
-[`Signer.HS384()`]()
+[`HS256()`]()
 
-[`Signer.HS512()`]()
+<!-- Description -->
+[`HS384()`]()
 
-[`Signer.RS256()`]()
+<!-- Description -->
+[`HS512()`]()
 
-[`Signer.RS384()`]()
+<!-- Description -->
+[`RS256()`]()
 
-[`Signer.RS512()`]()
+<!-- Description -->
+[`RS384()`]()
 
-[`Signer.ES256()`]()
+<!-- Description -->
+[`RS512()`]()
 
-[`Signer.ES384()`]()
+<!-- Description -->
+[`ES256()`]()
 
-[`Signer.ES512()`]()
+<!-- Description -->
+[`ES384()`]()
 
-[`Signer.PS256()`]()
+<!-- Description -->
+[`ES512()`]()
 
-[`Signer.PS384()`]()
+<!-- Description -->
+[`PS256()`]()
 
-[`Signer.PS512()`]()
+<!-- Description -->
+[`PS384()`]()
 
+<!-- Description -->
+[`PS512()`]()
+
+<!-- Description -->
+
+
+<!-- ## [Events]() -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- [`eventName`]() event -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- ## [Example]() -->
+<!--  -->
+<!-- ### [Title]() -->
+<!--  -->
+<!-- Description -->
 # Verifier
 
+<!-- Description -->
+
+
+
+
+
+
 ## [Static methods]()
 
-[`Verifier.HS256()`]()
+<!-- _Description_ -->
 
-[`Verifier.HS384()`]()
+[`HS256()`]()
 
-[`Verifier.HS512()`]()
+<!-- Description -->
+[`HS384()`]()
 
-[`Verifier.RS256()`]()
+<!-- Description -->
+[`HS512()`]()
 
-[`Verifier.RS384()`]()
+<!-- Description -->
+[`RS256()`]()
 
-[`Verifier.RS512()`]()
+<!-- Description -->
+[`RS384()`]()
 
-[`Verifier.ES256()`]()
+<!-- Description -->
+[`RS512()`]()
 
-[`Verifier.ES384()`]()
+<!-- Description -->
+[`ES256()`]()
 
-[`Verifier.ES512()`]()
+<!-- Description -->
+[`ES384()`]()
 
-[`Verifier.PS256()`]()
+<!-- Description -->
+[`ES512()`]()
 
-[`Verifier.PS384()`]()
+<!-- Description -->
+[`PS256()`]()
 
-[`Verifier.PS512()`]()
+<!-- Description -->
+[`PS384()`]()
 
+<!-- Description -->
+[`PS512()`]()
+
+<!-- Description -->
+
+
+<!-- ## [Events]() -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- [`eventName`]() event -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- ## [Example]() -->
+<!--  -->
+<!-- ### [Title]() -->
+<!--  -->
+<!-- Description -->
 # JWT
 
+<!-- Description -->
+
+
+
+
+
+
 ## [Static methods]()
 
-[`JWT.encode()`]()
+<!-- _Description_ -->
 
-[`JWT.decode()`]()
+[`encode()`]()
 
-[`JWT.sign()`]()
+<!-- Description -->
+[`decode()`]()
 
-[`JWT.verify()`]()
+<!-- Description -->
+[`sign()`]()
+
+<!-- Description -->
+[`verify()`]()
+
+<!-- Description -->
+
+
+<!-- ## [Events]() -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- [`eventName`]() event -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- ## [Example]() -->
+<!--  -->
+<!-- ### [Title]() -->
+<!--  -->
+<!-- Description -->
 
 ## [See also]()
 
