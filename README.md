@@ -10,196 +10,196 @@
 <!-- _Methods._ -->
 
 
-### Signer.HS256()
+## Signer.HS256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     HS256(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.HS384()
+## Signer.HS384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     HS384(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.HS512()
+## Signer.HS512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     HS512(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.RS256()
+## Signer.RS256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     RS256(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.RS384()
+## Signer.RS384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     RS384(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.RS512()
+## Signer.RS512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     RS512(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.ES256()
+## Signer.ES256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     ES256(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.ES384()
+## Signer.ES384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     ES384(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.ES512()
+## Signer.ES512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     ES512(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.PS256()
+## Signer.PS256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     PS256(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.PS384()
+## Signer.PS384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     PS384(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Signer.PS512()
+## Signer.PS512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     PS512(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
 # Verifier
@@ -213,196 +213,196 @@ name|type|defaultvalue
 <!-- _Methods._ -->
 
 
-### Verifier.HS256()
+## Verifier.HS256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     HS256(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.HS384()
+## Verifier.HS384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     HS384(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.HS512()
+## Verifier.HS512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     HS512(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.RS256()
+## Verifier.RS256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     RS256(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.RS384()
+## Verifier.RS384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     RS384(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.RS512()
+## Verifier.RS512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     RS512(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.ES256()
+## Verifier.ES256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     ES256(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.ES384()
+## Verifier.ES384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     ES384(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.ES512()
+## Verifier.ES512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     ES512(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.PS256()
+## Verifier.PS256()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     PS256(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.PS384()
+## Verifier.PS384()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     PS384(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
-### Verifier.PS512()
+## Verifier.PS512()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     PS512(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 
-##### [Return value]()
+#### [Return value]()
 
 
 # JWT
@@ -416,72 +416,72 @@ name|type|defaultvalue
 <!-- _Methods._ -->
 
 
-### JWT.encode()
+## JWT.encode()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     encode(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`*`|
 options|`*`|
 
-##### [Return value]()
+#### [Return value]()
 
 `Any`
 
-### JWT.decode()
+## JWT.decode()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     decode(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`*`|
 options|`*`|
 
-##### [Return value]()
+#### [Return value]()
 
 `Any`
 
-### JWT.sign()
+## JWT.sign()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     sign(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`*`|
 options|`*`|
 
-##### [Return value]()
+#### [Return value]()
 
 `Any`
 
-### JWT.verify()
+## JWT.verify()
 
 
 
-#### [Syntax]()
+### [Syntax]()
 
     verify(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -489,7 +489,7 @@ data|`*`|
 signature|`*`|
 options|`*`|
 
-##### [Return value]()
+#### [Return value]()
 
 `Any`
 
