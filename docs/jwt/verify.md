@@ -14,11 +14,8 @@ verify(data,signature,options);
 ### Parameters
 
 - `data`
-
 - `signature`
-
 - `options`
-
 <!-- parameters -->
 
 <!-- return -->

@@ -14,9 +14,7 @@ decode(data,options);
 ### Parameters
 
 - `data`
-
 - `options`
-
 <!-- parameters -->
 
 <!-- return -->
