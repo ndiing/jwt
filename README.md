@@ -18,12 +18,6 @@
 
     HS256(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.HS384()
@@ -34,12 +28,6 @@ name|type|defaultvalue
 
     HS384(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.HS512()
@@ -50,12 +38,6 @@ name|type|defaultvalue
 
     HS512(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.RS256()
@@ -66,12 +48,6 @@ name|type|defaultvalue
 
     RS256(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.RS384()
@@ -82,12 +58,6 @@ name|type|defaultvalue
 
     RS384(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.RS512()
@@ -98,12 +68,6 @@ name|type|defaultvalue
 
     RS512(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.ES256()
@@ -114,12 +78,6 @@ name|type|defaultvalue
 
     ES256(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.ES384()
@@ -130,12 +88,6 @@ name|type|defaultvalue
 
     ES384(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.ES512()
@@ -146,12 +98,6 @@ name|type|defaultvalue
 
     ES512(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.PS256()
@@ -162,12 +108,6 @@ name|type|defaultvalue
 
     PS256(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.PS384()
@@ -178,12 +118,6 @@ name|type|defaultvalue
 
     PS384(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Signer.PS512()
@@ -194,12 +128,6 @@ name|type|defaultvalue
 
     PS512(data,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 # Verifier
@@ -221,12 +149,6 @@ name|type|defaultvalue
 
     HS256(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.HS384()
@@ -237,12 +159,6 @@ name|type|defaultvalue
 
     HS384(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.HS512()
@@ -253,12 +169,6 @@ name|type|defaultvalue
 
     HS512(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.RS256()
@@ -269,12 +179,6 @@ name|type|defaultvalue
 
     RS256(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.RS384()
@@ -285,12 +189,6 @@ name|type|defaultvalue
 
     RS384(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.RS512()
@@ -301,12 +199,6 @@ name|type|defaultvalue
 
     RS512(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.ES256()
@@ -317,12 +209,6 @@ name|type|defaultvalue
 
     ES256(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.ES384()
@@ -333,12 +219,6 @@ name|type|defaultvalue
 
     ES384(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.ES512()
@@ -349,12 +229,6 @@ name|type|defaultvalue
 
     ES512(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.PS256()
@@ -365,12 +239,6 @@ name|type|defaultvalue
 
     PS256(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.PS384()
@@ -381,12 +249,6 @@ name|type|defaultvalue
 
     PS384(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 ## Verifier.PS512()
@@ -397,12 +259,6 @@ name|type|defaultvalue
 
     PS512(data,signature,options)
 
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-
-#### [Return value]()
 
 
 # JWT
