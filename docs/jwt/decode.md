@@ -11,6 +11,12 @@ decode(data,options);
 ```
 
 <!-- parameters -->
+### Parameters
+
+- `data`
+
+- `options`
+
 <!-- parameters -->
 
 <!-- return -->
