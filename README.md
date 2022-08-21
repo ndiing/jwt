@@ -1,197 +1,500 @@
-## Classes
 
-<dl>
-<dt><a href="#Signer">Signer</a></dt>
-<dd></dd>
-<dt><a href="#Verifier">Verifier</a></dt>
-<dd></dd>
-<dt><a href="#JWT">JWT</a></dt>
-<dd></dd>
-</dl>
+# Signer
 
-<a name="Signer"></a>
 
-## Signer
-**Kind**: global class  
 
-* [Signer](#Signer)
-    * [.HS256()](#Signer.HS256)
-    * [.HS384()](#Signer.HS384)
-    * [.HS512()](#Signer.HS512)
-    * [.RS256()](#Signer.RS256)
-    * [.RS384()](#Signer.RS384)
-    * [.RS512()](#Signer.RS512)
-    * [.ES256()](#Signer.ES256)
-    * [.ES384()](#Signer.ES384)
-    * [.ES512()](#Signer.ES512)
-    * [.PS256()](#Signer.PS256)
-    * [.PS384()](#Signer.PS384)
-    * [.PS512()](#Signer.PS512)
 
-<a name="Signer.HS256"></a>
+
+## [Methods]()
+
+<!-- _Methods._ -->
+
 
 ### Signer.HS256()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.HS384"></a>
+
+
+
+#### [Syntax]()
+
+    HS256(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.HS384()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.HS512"></a>
+
+
+
+#### [Syntax]()
+
+    HS384(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.HS512()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.RS256"></a>
+
+
+
+#### [Syntax]()
+
+    HS512(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.RS256()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.RS384"></a>
+
+
+
+#### [Syntax]()
+
+    RS256(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.RS384()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.RS512"></a>
+
+
+
+#### [Syntax]()
+
+    RS384(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.RS512()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.ES256"></a>
+
+
+
+#### [Syntax]()
+
+    RS512(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.ES256()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.ES384"></a>
+
+
+
+#### [Syntax]()
+
+    ES256(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.ES384()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.ES512"></a>
+
+
+
+#### [Syntax]()
+
+    ES384(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.ES512()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.PS256"></a>
+
+
+
+#### [Syntax]()
+
+    ES512(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.PS256()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.PS384"></a>
+
+
+
+#### [Syntax]()
+
+    PS256(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.PS384()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Signer.PS512"></a>
+
+
+
+#### [Syntax]()
+
+    PS384(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Signer.PS512()
-**Kind**: static method of [<code>Signer</code>](#Signer)  
-<a name="Verifier"></a>
 
-## Verifier
-**Kind**: global class  
 
-* [Verifier](#Verifier)
-    * [.HS256()](#Verifier.HS256)
-    * [.HS384()](#Verifier.HS384)
-    * [.HS512()](#Verifier.HS512)
-    * [.RS256()](#Verifier.RS256)
-    * [.RS384()](#Verifier.RS384)
-    * [.RS512()](#Verifier.RS512)
-    * [.ES256()](#Verifier.ES256)
-    * [.ES384()](#Verifier.ES384)
-    * [.ES512()](#Verifier.ES512)
-    * [.PS256()](#Verifier.PS256)
-    * [.PS384()](#Verifier.PS384)
-    * [.PS512()](#Verifier.PS512)
 
-<a name="Verifier.HS256"></a>
+#### [Syntax]()
+
+    PS512(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
+
+# Verifier
+
+
+
+
+
+## [Methods]()
+
+<!-- _Methods._ -->
+
 
 ### Verifier.HS256()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.HS384"></a>
+
+
+
+#### [Syntax]()
+
+    HS256(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.HS384()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.HS512"></a>
+
+
+
+#### [Syntax]()
+
+    HS384(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.HS512()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.RS256"></a>
+
+
+
+#### [Syntax]()
+
+    HS512(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.RS256()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.RS384"></a>
+
+
+
+#### [Syntax]()
+
+    RS256(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.RS384()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.RS512"></a>
+
+
+
+#### [Syntax]()
+
+    RS384(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.RS512()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.ES256"></a>
+
+
+
+#### [Syntax]()
+
+    RS512(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.ES256()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.ES384"></a>
+
+
+
+#### [Syntax]()
+
+    ES256(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.ES384()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.ES512"></a>
+
+
+
+#### [Syntax]()
+
+    ES384(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.ES512()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.PS256"></a>
+
+
+
+#### [Syntax]()
+
+    ES512(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.PS256()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.PS384"></a>
+
+
+
+#### [Syntax]()
+
+    PS256(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.PS384()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="Verifier.PS512"></a>
+
+
+
+#### [Syntax]()
+
+    PS384(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+
+##### [Return value]()
+
 
 ### Verifier.PS512()
-**Kind**: static method of [<code>Verifier</code>](#Verifier)  
-<a name="JWT"></a>
 
-## JWT
-**Kind**: global class  
 
-* [JWT](#JWT)
-    * [.encode(data, options)](#JWT.encode) ⇒ <code>Any</code>
-    * [.decode(data, options)](#JWT.decode) ⇒ <code>Any</code>
-    * [.sign(data, options)](#JWT.sign) ⇒ <code>Any</code>
-    * [.verify(data, signature, options)](#JWT.verify) ⇒ <code>Any</code>
 
-<a name="JWT.encode"></a>
+#### [Syntax]()
 
-### JWT.encode(data, options) ⇒ <code>Any</code>
-**Kind**: static method of [<code>JWT</code>](#JWT)  
+    PS512(data,signature,options)
 
-| Param | Type |
-| --- | --- |
-| data | <code>\*</code> | 
-| options | <code>\*</code> | 
+##### [Parameters]()
 
-<a name="JWT.decode"></a>
+name|type|defaultvalue
+---|---|---
 
-### JWT.decode(data, options) ⇒ <code>Any</code>
-**Kind**: static method of [<code>JWT</code>](#JWT)  
+##### [Return value]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>\*</code> | 
-| options | <code>\*</code> | 
 
-<a name="JWT.sign"></a>
+# JWT
 
-### JWT.sign(data, options) ⇒ <code>Any</code>
-**Kind**: static method of [<code>JWT</code>](#JWT)  
 
-| Param | Type |
-| --- | --- |
-| data | <code>\*</code> | 
-| options | <code>\*</code> | 
 
-<a name="JWT.verify"></a>
 
-### JWT.verify(data, signature, options) ⇒ <code>Any</code>
-**Kind**: static method of [<code>JWT</code>](#JWT)  
 
-| Param | Type |
-| --- | --- |
-| data | <code>\*</code> | 
-| signature | <code>\*</code> | 
-| options | <code>\*</code> | 
+## [Methods]()
+
+<!-- _Methods._ -->
+
+
+### JWT.encode()
+
+
+
+#### [Syntax]()
+
+    encode(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+data|`*`|
+options|`*`|
+
+##### [Return value]()
+
+`Any`
+
+### JWT.decode()
+
+
+
+#### [Syntax]()
+
+    decode(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+data|`*`|
+options|`*`|
+
+##### [Return value]()
+
+`Any`
+
+### JWT.sign()
+
+
+
+#### [Syntax]()
+
+    sign(data,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+data|`*`|
+options|`*`|
+
+##### [Return value]()
+
+`Any`
+
+### JWT.verify()
+
+
+
+#### [Syntax]()
+
+    verify(data,signature,options)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+data|`*`|
+signature|`*`|
+options|`*`|
+
+##### [Return value]()
+
+`Any`
+
+# 
+
+
+
 
