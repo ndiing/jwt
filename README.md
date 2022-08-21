@@ -1,6 +1,6 @@
 # Signer
 
-## [Methods]()
+## [Static methods]()
 
 [`Signer.HS256()`]()
 
@@ -28,7 +28,7 @@
 
 # Verifier
 
-## [Methods]()
+## [Static methods]()
 
 [`Verifier.HS256()`]()
 
@@ -56,7 +56,7 @@
 
 # JWT
 
-## [Methods]()
+## [Static methods]()
 
 [`JWT.encode()`]()
 
@@ -66,8 +66,6 @@
 
 [`JWT.verify()`]()
 
-# Global
-
 ## [See also]()
 
--   See also
+-   [`link`]()
