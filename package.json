@@ -3,7 +3,7 @@
     "@ndiinginc/crypto": "^1.0.0"
   },
   "name": "@ndiinginc/jwt",
-  "description": "[Docs](https://ndiing.github.io/jwt/) ``` npm install @ndiing/jwt ```",
+  "description": "Nodejs JSON Web Token",
   "version": "1.0.1",
   "main": "index.js",
   "devDependencies": {},
@@ -15,7 +15,6 @@
     "url": "git+https://github.com/ndiing/jwt.git"
   },
   "keywords": [
-    "nodejs",
     "jwt",
     "json-web-token"
   ],
