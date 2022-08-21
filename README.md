@@ -1,6 +1,6 @@
 # Signer
 
-<!-- Description -->
+Description
 
 
 
@@ -9,44 +9,44 @@
 
 ## [Static methods]()
 
-<!-- _Description_ -->
+_Description_
 
-[`HS256()`]()
+[`HS256()`](./docs/hs256.md)
 
-<!-- Description -->
-[`HS384()`]()
 
-<!-- Description -->
-[`HS512()`]()
+[`HS384()`](./docs/hs384.md)
 
-<!-- Description -->
-[`RS256()`]()
 
-<!-- Description -->
-[`RS384()`]()
+[`HS512()`](./docs/hs512.md)
 
-<!-- Description -->
-[`RS512()`]()
 
-<!-- Description -->
-[`ES256()`]()
+[`RS256()`](./docs/rs256.md)
 
-<!-- Description -->
-[`ES384()`]()
 
-<!-- Description -->
-[`ES512()`]()
+[`RS384()`](./docs/rs384.md)
 
-<!-- Description -->
-[`PS256()`]()
 
-<!-- Description -->
-[`PS384()`]()
+[`RS512()`](./docs/rs512.md)
 
-<!-- Description -->
-[`PS512()`]()
 
-<!-- Description -->
+[`ES256()`](./docs/es256.md)
+
+
+[`ES384()`](./docs/es384.md)
+
+
+[`ES512()`](./docs/es512.md)
+
+
+[`PS256()`](./docs/ps256.md)
+
+
+[`PS384()`](./docs/ps384.md)
+
+
+[`PS512()`](./docs/ps512.md)
+
+
 
 
 <!-- ## [Events]() -->
@@ -57,14 +57,16 @@
 <!--  -->
 <!-- Description -->
 <!--  -->
+
 <!-- ## [Example]() -->
 <!--  -->
 <!-- ### [Title]() -->
 <!--  -->
 <!-- Description -->
+
 # Verifier
 
-<!-- Description -->
+Description
 
 
 
@@ -73,44 +75,44 @@
 
 ## [Static methods]()
 
-<!-- _Description_ -->
+_Description_
 
-[`HS256()`]()
+[`HS256()`](./docs/hs256.md)
 
-<!-- Description -->
-[`HS384()`]()
 
-<!-- Description -->
-[`HS512()`]()
+[`HS384()`](./docs/hs384.md)
 
-<!-- Description -->
-[`RS256()`]()
 
-<!-- Description -->
-[`RS384()`]()
+[`HS512()`](./docs/hs512.md)
 
-<!-- Description -->
-[`RS512()`]()
 
-<!-- Description -->
-[`ES256()`]()
+[`RS256()`](./docs/rs256.md)
 
-<!-- Description -->
-[`ES384()`]()
 
-<!-- Description -->
-[`ES512()`]()
+[`RS384()`](./docs/rs384.md)
 
-<!-- Description -->
-[`PS256()`]()
 
-<!-- Description -->
-[`PS384()`]()
+[`RS512()`](./docs/rs512.md)
 
-<!-- Description -->
-[`PS512()`]()
 
-<!-- Description -->
+[`ES256()`](./docs/es256.md)
+
+
+[`ES384()`](./docs/es384.md)
+
+
+[`ES512()`](./docs/es512.md)
+
+
+[`PS256()`](./docs/ps256.md)
+
+
+[`PS384()`](./docs/ps384.md)
+
+
+[`PS512()`](./docs/ps512.md)
+
+
 
 
 <!-- ## [Events]() -->
@@ -121,14 +123,16 @@
 <!--  -->
 <!-- Description -->
 <!--  -->
+
 <!-- ## [Example]() -->
 <!--  -->
 <!-- ### [Title]() -->
 <!--  -->
 <!-- Description -->
+
 # JWT
 
-<!-- Description -->
+Description
 
 
 
@@ -137,20 +141,20 @@
 
 ## [Static methods]()
 
-<!-- _Description_ -->
+_Description_
 
-[`encode()`]()
+[`encode()`](./docs/encode.md)
 
-<!-- Description -->
-[`decode()`]()
 
-<!-- Description -->
-[`sign()`]()
+[`decode()`](./docs/decode.md)
 
-<!-- Description -->
-[`verify()`]()
 
-<!-- Description -->
+[`sign()`](./docs/sign.md)
+
+
+[`verify()`](./docs/verify.md)
+
+
 
 
 <!-- ## [Events]() -->
@@ -161,11 +165,13 @@
 <!--  -->
 <!-- Description -->
 <!--  -->
+
 <!-- ## [Example]() -->
 <!--  -->
 <!-- ### [Title]() -->
 <!--  -->
 <!-- Description -->
+
 
 ## [See also]()
 
