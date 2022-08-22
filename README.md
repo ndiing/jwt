@@ -4,25 +4,6 @@
 npm install @ndiinginc/jwt
 ```
 
-## Global
-
-<!-- constructor -->
-<!-- constructor -->
-
-<!-- properties -->
-<!-- properties -->
-
-<!-- staticproperties -->
-<!-- staticproperties -->
-
-<!-- methods -->
-<!-- methods -->
-
-<!-- staticmethods -->
-<!-- staticmethods -->
-
-<!-- examples -->
-<!-- examples -->
 ## Signer
 
 <!-- constructor -->
