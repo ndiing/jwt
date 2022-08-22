@@ -4,6 +4,22 @@
 npm install @ndiinginc/jwt
 ```
 
+## Global
+
+<!-- properties -->
+<!-- properties -->
+
+<!-- staticproperties -->
+<!-- staticproperties -->
+
+<!-- methods -->
+<!-- methods -->
+
+<!-- staticmethods -->
+<!-- staticmethods -->
+
+<!-- examples -->
+<!-- examples -->
 ## Signer
 
 <!-- properties -->
