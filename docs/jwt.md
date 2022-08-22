@@ -16,3 +16,6 @@ JWT()
 </dl>
 
 
+### See also
+- [https://www.rfc-editor.org/rfc/rfc7519.html](https://www.rfc-editor.org/rfc/rfc7519.html)
+
