@@ -6,6 +6,9 @@ npm install @ndiinginc/jwt
 
 ## Global
 
+<!-- constructor -->
+<!-- constructor -->
+
 <!-- properties -->
 <!-- properties -->
 
@@ -21,6 +24,9 @@ npm install @ndiinginc/jwt
 <!-- examples -->
 <!-- examples -->
 ## Signer
+
+<!-- constructor -->
+<!-- constructor -->
 
 <!-- properties -->
 <!-- properties -->
@@ -65,6 +71,9 @@ npm install @ndiinginc/jwt
 <!-- examples -->
 ## Verifier
 
+<!-- constructor -->
+<!-- constructor -->
+
 <!-- properties -->
 <!-- properties -->
 
@@ -107,6 +116,9 @@ npm install @ndiinginc/jwt
 <!-- examples -->
 <!-- examples -->
 ## JWT
+
+<!-- constructor -->
+<!-- constructor -->
 
 <!-- properties -->
 <!-- properties -->
