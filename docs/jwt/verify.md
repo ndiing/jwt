@@ -1,22 +1,21 @@
-# JWT.verify()
+## JWT.verify()
 
-
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-verify(data,signature,options);
+### Syntax
+```
+verify(data,signature,options)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dt><code>signature</code></dt>
+    <dt><code>options</code></dt>
+</dl>
 
-- `data`
-- `signature`
-- `options`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

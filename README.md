@@ -1,79 +1,10 @@
+# Install
 
-# Signer
+```
+npm install @ndiinginc/jwt
+```
 
-
-<!-- examples -->
-<!-- examples -->
-
-<!-- properties -->
-<!-- properties -->
-
-<!-- staticproperties -->
-<!-- staticproperties -->
-
-<!-- methods -->
-<!-- methods -->
-
-<!-- staticmethods -->
-## Static methods
-
-
-[`Signer.HS256(data,options)`](./docs/signer/hs256.md)
-
-
-
-[`Signer.HS384(data,options)`](./docs/signer/hs384.md)
-
-
-
-[`Signer.HS512(data,options)`](./docs/signer/hs512.md)
-
-
-
-[`Signer.RS256(data,options)`](./docs/signer/rs256.md)
-
-
-
-[`Signer.RS384(data,options)`](./docs/signer/rs384.md)
-
-
-
-[`Signer.RS512(data,options)`](./docs/signer/rs512.md)
-
-
-
-[`Signer.ES256(data,options)`](./docs/signer/es256.md)
-
-
-
-[`Signer.ES384(data,options)`](./docs/signer/es384.md)
-
-
-
-[`Signer.ES512(data,options)`](./docs/signer/es512.md)
-
-
-
-[`Signer.PS256(data,options)`](./docs/signer/ps256.md)
-
-
-
-[`Signer.PS384(data,options)`](./docs/signer/ps384.md)
-
-
-
-[`Signer.PS512(data,options)`](./docs/signer/ps512.md)
-
-
-
-<!-- staticmethods -->
-
-
-# Verifier
-
-
-<!-- examples -->
-<!-- examples -->
+## Signer
 
 <!-- properties -->
 <!-- properties -->
@@ -85,65 +16,38 @@
 <!-- methods -->
 
 <!-- staticmethods -->
-## Static methods
-
-
-[`Verifier.HS256(data,signature,options)`](./docs/verifier/hs256.md)
-
-
-
-[`Verifier.HS384(data,signature,options)`](./docs/verifier/hs384.md)
-
-
-
-[`Verifier.HS512(data,signature,options)`](./docs/verifier/hs512.md)
-
-
-
-[`Verifier.RS256(data,signature,options)`](./docs/verifier/rs256.md)
-
-
-
-[`Verifier.RS384(data,signature,options)`](./docs/verifier/rs384.md)
-
-
-
-[`Verifier.RS512(data,signature,options)`](./docs/verifier/rs512.md)
-
-
-
-[`Verifier.ES256(data,signature,options)`](./docs/verifier/es256.md)
-
-
-
-[`Verifier.ES384(data,signature,options)`](./docs/verifier/es384.md)
-
-
-
-[`Verifier.ES512(data,signature,options)`](./docs/verifier/es512.md)
-
-
-
-[`Verifier.PS256(data,signature,options)`](./docs/verifier/ps256.md)
-
-
-
-[`Verifier.PS384(data,signature,options)`](./docs/verifier/ps384.md)
-
-
-
-[`Verifier.PS512(data,signature,options)`](./docs/verifier/ps512.md)
-
-
-
+### Static Methods
+<dl>
+    <dt><code><a href="./docs/signer/hs256.md">Signer.HS256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/hs384.md">Signer.HS384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/hs512.md">Signer.HS512()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/rs256.md">Signer.RS256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/rs384.md">Signer.RS384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/rs512.md">Signer.RS512()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/es256.md">Signer.ES256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/es384.md">Signer.ES384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/es512.md">Signer.ES512()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/ps256.md">Signer.PS256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/ps384.md">Signer.PS384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/signer/ps512.md">Signer.PS512()</a></code></dt>
+    <dd></dd>
+</dl>
 <!-- staticmethods -->
 
-
-# JWT
-
-
 <!-- examples -->
 <!-- examples -->
+## Verifier
 
 <!-- properties -->
 <!-- properties -->
@@ -155,24 +59,61 @@
 <!-- methods -->
 
 <!-- staticmethods -->
-## Static methods
-
-
-[`JWT.encode(data,options)`](./docs/jwt/encode.md)
-
-
-
-[`JWT.decode(data,options)`](./docs/jwt/decode.md)
-
-
-
-[`JWT.sign(data,options)`](./docs/jwt/sign.md)
-
-
-
-[`JWT.verify(data,signature,options)`](./docs/jwt/verify.md)
-
-
-
+### Static Methods
+<dl>
+    <dt><code><a href="./docs/verifier/hs256.md">Verifier.HS256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/hs384.md">Verifier.HS384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/hs512.md">Verifier.HS512()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/rs256.md">Verifier.RS256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/rs384.md">Verifier.RS384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/rs512.md">Verifier.RS512()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/es256.md">Verifier.ES256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/es384.md">Verifier.ES384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/es512.md">Verifier.ES512()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/ps256.md">Verifier.PS256()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/ps384.md">Verifier.PS384()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/verifier/ps512.md">Verifier.PS512()</a></code></dt>
+    <dd></dd>
+</dl>
 <!-- staticmethods -->
 
+<!-- examples -->
+<!-- examples -->
+## JWT
+
+<!-- properties -->
+<!-- properties -->
+
+<!-- staticproperties -->
+<!-- staticproperties -->
+
+<!-- methods -->
+<!-- methods -->
+
+<!-- staticmethods -->
+### Static Methods
+<dl>
+    <dt><code><a href="./docs/jwt/encode.md">JWT.encode()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/jwt/decode.md">JWT.decode()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/jwt/sign.md">JWT.sign()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/jwt/verify.md">JWT.verify()</a></code></dt>
+    <dd></dd>
+</dl>
+<!-- staticmethods -->
+
+<!-- examples -->
+<!-- examples -->

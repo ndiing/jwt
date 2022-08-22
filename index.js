@@ -236,7 +236,7 @@ class Verifier {
 }
 
 /**
- * @see {@link https://www.rfc-editor.org/rfc/rfc7519.html}
+ * @see https://www.rfc-editor.org/rfc/rfc7519.html
  */
 class JWT {
     /**

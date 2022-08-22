@@ -1,21 +1,20 @@
-# JWT.decode()
+## JWT.decode()
 
-
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-decode(data,options);
+### Syntax
+```
+decode(data,options)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dt><code>options</code></dt>
+</dl>
 
-- `data`
-- `options`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

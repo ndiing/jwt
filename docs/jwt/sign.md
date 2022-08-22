@@ -1,21 +1,20 @@
-# JWT.sign()
+## JWT.sign()
 
-
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-sign(data,options);
+### Syntax
+```
+sign(data,options)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dt><code>options</code></dt>
+</dl>
 
-- `data`
-- `options`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+
