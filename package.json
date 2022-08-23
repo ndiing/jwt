@@ -4,7 +4,7 @@
   },
   "name": "@ndiinginc/jwt",
   "description": "Nodejs JSON Web Token",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
