@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@ndiinginc/crypto": "^1.0.0"
+    "@ndiinginc/crypto": "^1.0.3"
   },
   "name": "@ndiinginc/jwt",
   "description": "Nodejs JSON Web Token",
