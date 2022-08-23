@@ -21,29 +21,29 @@ npm install @ndiinginc/jwt
 <!-- staticmethods -->
 ### Static Methods
 <dl>
-    <dt><code><a href="./docs/signer/hs256.md">Signer.HS256()</a></code></dt>
+    <dt><code><a href="./docs/signer/hs2-56.md">Signer.HS256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/hs384.md">Signer.HS384()</a></code></dt>
+    <dt><code><a href="./docs/signer/hs3-84.md">Signer.HS384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/hs512.md">Signer.HS512()</a></code></dt>
+    <dt><code><a href="./docs/signer/hs5-12.md">Signer.HS512()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/rs256.md">Signer.RS256()</a></code></dt>
+    <dt><code><a href="./docs/signer/rs2-56.md">Signer.RS256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/rs384.md">Signer.RS384()</a></code></dt>
+    <dt><code><a href="./docs/signer/rs3-84.md">Signer.RS384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/rs512.md">Signer.RS512()</a></code></dt>
+    <dt><code><a href="./docs/signer/rs5-12.md">Signer.RS512()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/es256.md">Signer.ES256()</a></code></dt>
+    <dt><code><a href="./docs/signer/es2-56.md">Signer.ES256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/es384.md">Signer.ES384()</a></code></dt>
+    <dt><code><a href="./docs/signer/es3-84.md">Signer.ES384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/es512.md">Signer.ES512()</a></code></dt>
+    <dt><code><a href="./docs/signer/es5-12.md">Signer.ES512()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/ps256.md">Signer.PS256()</a></code></dt>
+    <dt><code><a href="./docs/signer/ps2-56.md">Signer.PS256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/ps384.md">Signer.PS384()</a></code></dt>
+    <dt><code><a href="./docs/signer/ps3-84.md">Signer.PS384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/signer/ps512.md">Signer.PS512()</a></code></dt>
+    <dt><code><a href="./docs/signer/ps5-12.md">Signer.PS512()</a></code></dt>
     <dd></dd>
 </dl>
 <!-- staticmethods -->
@@ -67,29 +67,29 @@ npm install @ndiinginc/jwt
 <!-- staticmethods -->
 ### Static Methods
 <dl>
-    <dt><code><a href="./docs/verifier/hs256.md">Verifier.HS256()</a></code></dt>
+    <dt><code><a href="./docs/verifier/hs2-56.md">Verifier.HS256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/hs384.md">Verifier.HS384()</a></code></dt>
+    <dt><code><a href="./docs/verifier/hs3-84.md">Verifier.HS384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/hs512.md">Verifier.HS512()</a></code></dt>
+    <dt><code><a href="./docs/verifier/hs5-12.md">Verifier.HS512()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/rs256.md">Verifier.RS256()</a></code></dt>
+    <dt><code><a href="./docs/verifier/rs2-56.md">Verifier.RS256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/rs384.md">Verifier.RS384()</a></code></dt>
+    <dt><code><a href="./docs/verifier/rs3-84.md">Verifier.RS384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/rs512.md">Verifier.RS512()</a></code></dt>
+    <dt><code><a href="./docs/verifier/rs5-12.md">Verifier.RS512()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/es256.md">Verifier.ES256()</a></code></dt>
+    <dt><code><a href="./docs/verifier/es2-56.md">Verifier.ES256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/es384.md">Verifier.ES384()</a></code></dt>
+    <dt><code><a href="./docs/verifier/es3-84.md">Verifier.ES384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/es512.md">Verifier.ES512()</a></code></dt>
+    <dt><code><a href="./docs/verifier/es5-12.md">Verifier.ES512()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/ps256.md">Verifier.PS256()</a></code></dt>
+    <dt><code><a href="./docs/verifier/ps2-56.md">Verifier.PS256()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/ps384.md">Verifier.PS384()</a></code></dt>
+    <dt><code><a href="./docs/verifier/ps3-84.md">Verifier.PS384()</a></code></dt>
     <dd></dd>
-    <dt><code><a href="./docs/verifier/ps512.md">Verifier.PS512()</a></code></dt>
+    <dt><code><a href="./docs/verifier/ps5-12.md">Verifier.PS512()</a></code></dt>
     <dd></dd>
 </dl>
 <!-- staticmethods -->
