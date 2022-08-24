@@ -4,10 +4,6 @@
 npm install @ndiinginc/jwt
 ```
 
-
-<!-- examples -->
-<!-- examples -->
-
 ## Signer
 
 <!-- constructor -->
@@ -54,7 +50,6 @@ npm install @ndiinginc/jwt
 
 <!-- examples -->
 <!-- examples -->
-
 ## Verifier
 
 <!-- constructor -->
@@ -101,7 +96,6 @@ npm install @ndiinginc/jwt
 
 <!-- examples -->
 <!-- examples -->
-
 ## JWT
 
 <!-- constructor -->
@@ -129,3 +123,6 @@ npm install @ndiinginc/jwt
     <dd></dd>
 </dl>
 <!-- staticmethods -->
+
+<!-- examples -->
+<!-- examples -->
