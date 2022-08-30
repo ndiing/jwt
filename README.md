@@ -78,6 +78,9 @@ npm install @ndiinginc/jwt
 # Signer
 
 
+<!-- constructor -->
+<!-- constructor -->
+
 <!-- properties -->
 <!-- properties -->
 <!-- staticproperties -->
@@ -133,6 +136,9 @@ npm install @ndiinginc/jwt
 # Verifier
 
 
+<!-- constructor -->
+<!-- constructor -->
+
 <!-- properties -->
 <!-- properties -->
 <!-- staticproperties -->
@@ -187,6 +193,9 @@ npm install @ndiinginc/jwt
 
 # JWT
 
+
+<!-- constructor -->
+<!-- constructor -->
 
 <!-- properties -->
 <!-- properties -->
