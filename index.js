@@ -1,2 +1,2 @@
-const jwt=require('./lib/jwt')
-module.exports=jwt
+const jwt = require("./lib/jwt");
+module.exports = jwt;
