@@ -1,98 +1,49 @@
-## Constants
+<a name="module_jwt"></a>
 
-<dl>
-<dt><a href="#signer">signer</a> : <code>Object</code></dt>
-<dd><p>Objek untuk menandatangani data menggunakan berbagai algoritma.</p>
-</dd>
-<dt><a href="#verifier">verifier</a> : <code>Object</code></dt>
-<dd><p>Objek untuk memverifikasi tanda tangan menggunakan berbagai algoritma.</p>
-</dd>
-</dl>
+## jwt
 
-## Functions
+* [jwt](#module_jwt)
+    * [.signer](#module_jwt.signer)
+    * [.verifier](#module_jwt.verifier)
+    * [.encode(header, payload, secret)](#module_jwt.encode) ⇒ <code>string</code>
+    * [.decode(token, secret)](#module_jwt.decode) ⇒ <code>Object</code> \| <code>null</code>
 
-<dl>
-<dt><a href="#encode">encode(header, payload, secret)</a> ⇒ <code>string</code></dt>
-<dd><p>Mengkodekan header dan payload menjadi token JWT menggunakan algoritma penandatanganan yang ditentukan.</p>
-</dd>
-<dt><a href="#decode">decode(token, secret)</a> ⇒ <code>Object</code> | <code>null</code></dt>
-<dd><p>Menguraikan token JWT dan memverifikasi tanda tangan menggunakan kunci rahasia.</p>
-</dd>
-</dl>
+<a name="module_jwt.signer"></a>
 
-<a name="signer"></a>
+### jwt.signer
+Kumpulan fungsi untuk melakukan signing (penandatanganan) menggunakan berbagai algoritma.
 
-## signer : <code>Object</code>
+**Kind**: static constant of [<code>jwt</code>](#module_jwt)  
+<a name="module_jwt.verifier"></a>
 
-Objek untuk menandatangani data menggunakan berbagai algoritma.
+### jwt.verifier
+Kumpulan fungsi untuk melakukan verifikasi signature menggunakan berbagai algoritma.
 
-**Kind**: global constant  
-**Properties**
+**Kind**: static constant of [<code>jwt</code>](#module_jwt)  
+<a name="module_jwt.encode"></a>
 
-| Name  | Type                  | Description                                      |
-| ----- | --------------------- | ------------------------------------------------ |
-| hs256 | <code>function</code> | Menandatangani data menggunakan HMAC SHA-256.    |
-| hs384 | <code>function</code> | Menandatangani data menggunakan HMAC SHA-384.    |
-| hs512 | <code>function</code> | Menandatangani data menggunakan HMAC SHA-512.    |
-| rs256 | <code>function</code> | Menandatangani data menggunakan RSA SHA-256.     |
-| rs384 | <code>function</code> | Menandatangani data menggunakan RSA SHA-384.     |
-| rs512 | <code>function</code> | Menandatangani data menggunakan RSA SHA-512.     |
-| es256 | <code>function</code> | Menandatangani data menggunakan ECDSA SHA-256.   |
-| es384 | <code>function</code> | Menandatangani data menggunakan ECDSA SHA-384.   |
-| es512 | <code>function</code> | Menandatangani data menggunakan ECDSA SHA-512.   |
-| ps256 | <code>function</code> | Menandatangani data menggunakan RSA PSS SHA-256. |
-| ps384 | <code>function</code> | Menandatangani data menggunakan RSA PSS SHA-384. |
-| ps512 | <code>function</code> | Menandatangani data menggunakan RSA PSS SHA-512. |
+### jwt.encode(header, payload, secret) ⇒ <code>string</code>
+Meng-encode header dan payload menjadi token JWT (JSON Web Token).
 
-<a name="verifier"></a>
+**Kind**: static method of [<code>jwt</code>](#module_jwt)  
+**Returns**: <code>string</code> - - Token JWT dalam format string.  
 
-## verifier : <code>Object</code>
+| Param | Type | Description |
+| --- | --- | --- |
+| header | <code>Object</code> | Header JWT yang berisi informasi tentang algoritma dan tipe token. |
+| payload | <code>Object</code> | Payload JWT yang berisi klaim atau data yang ingin disimpan dalam token. |
+| secret | <code>string</code> | Kunci rahasia atau kunci privat untuk signing. |
 
-Objek untuk memverifikasi tanda tangan menggunakan berbagai algoritma.
+<a name="module_jwt.decode"></a>
 
-**Kind**: global constant  
-**Properties**
+### jwt.decode(token, secret) ⇒ <code>Object</code> \| <code>null</code>
+Meng-decode token JWT dan memverifikasi signature-nya.
 
-| Name  | Type                  | Description                                             |
-| ----- | --------------------- | ------------------------------------------------------- |
-| hs256 | <code>function</code> | Memverifikasi tanda tangan menggunakan HMAC SHA-256.    |
-| hs384 | <code>function</code> | Memverifikasi tanda tangan menggunakan HMAC SHA-384.    |
-| hs512 | <code>function</code> | Memverifikasi tanda tangan menggunakan HMAC SHA-512.    |
-| rs256 | <code>function</code> | Memverifikasi tanda tangan menggunakan RSA SHA-256.     |
-| rs384 | <code>function</code> | Memverifikasi tanda tangan menggunakan RSA SHA-384.     |
-| rs512 | <code>function</code> | Memverifikasi tanda tangan menggunakan RSA SHA-512.     |
-| es256 | <code>function</code> | Memverifikasi tanda tangan menggunakan ECDSA SHA-256.   |
-| es384 | <code>function</code> | Memverifikasi tanda tangan menggunakan ECDSA SHA-384.   |
-| es512 | <code>function</code> | Memverifikasi tanda tangan menggunakan ECDSA SHA-512.   |
-| ps256 | <code>function</code> | Memverifikasi tanda tangan menggunakan RSA PSS SHA-256. |
-| ps384 | <code>function</code> | Memverifikasi tanda tangan menggunakan RSA PSS SHA-384. |
-| ps512 | <code>function</code> | Memverifikasi tanda tangan menggunakan RSA PSS SHA-512. |
+**Kind**: static method of [<code>jwt</code>](#module_jwt)  
+**Returns**: <code>Object</code> \| <code>null</code> - - Mengembalikan payload jika verifikasi berhasil, null jika gagal.  
 
-<a name="encode"></a>
+| Param | Type | Description |
+| --- | --- | --- |
+| token | <code>string</code> | Token JWT yang akan di-decode. |
+| secret | <code>string</code> | Kunci rahasia atau kunci publik untuk verifikasi. |
 
-## encode(header, payload, secret) ⇒ <code>string</code>
-
-Mengkodekan header dan payload menjadi token JWT menggunakan algoritma penandatanganan yang ditentukan.
-
-**Kind**: global function  
-**Returns**: <code>string</code> - Token JWT yang telah dikodekan.
-
-| Param   | Type                | Description                                                              |
-| ------- | ------------------- | ------------------------------------------------------------------------ |
-| header  | <code>Object</code> | Objek header JWT yang berisi informasi algoritma dan tipe token.         |
-| payload | <code>Object</code> | Objek payload JWT yang berisi informasi yang ingin disimpan dalam token. |
-| secret  | <code>string</code> | Kunci rahasia yang digunakan untuk menandatangani token.                 |
-
-<a name="decode"></a>
-
-## decode(token, secret) ⇒ <code>Object</code> \| <code>null</code>
-
-Menguraikan token JWT dan memverifikasi tanda tangan menggunakan kunci rahasia.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> \| <code>null</code> - Objek payload jika token valid, atau null jika tidak valid.
-
-| Param  | Type                | Description                                             |
-| ------ | ------------------- | ------------------------------------------------------- |
-| token  | <code>string</code> | Token JWT yang ingin diuraikan.                         |
-| secret | <code>string</code> | Kunci rahasia yang digunakan untuk memverifikasi token. |
