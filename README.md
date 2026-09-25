@@ -6,10 +6,10 @@ Library JWT ringan berbasis modul `crypto` bawaan Node.js — tanpa dependency e
 
 - Zero dependency, murni pakai `crypto` Node.js
 - Mendukung 12 algoritma signing:
-  - **HMAC**: `HS256`, `HS384`, `HS512`
-  - **RSA**: `RS256`, `RS384`, `RS512`
-  - **ECDSA**: `ES256`, `ES384`, `ES512`
-  - **RSA-PSS**: `PS256`, `PS384`, `PS512`
+    - **HMAC**: `HS256`, `HS384`, `HS512`
+    - **RSA**: `RS256`, `RS384`, `RS512`
+    - **ECDSA**: `ES256`, `ES384`, `ES512`
+    - **RSA-PSS**: `PS256`, `PS384`, `PS512`
 - Verifikasi signature pakai `crypto.timingSafeEqual` untuk algoritma HMAC (mencegah timing attack)
 - Validasi klaim `exp` (expiration) dan `nbf` (not before) otomatis saat `verify`
 
@@ -26,11 +26,7 @@ npm install @ndiinginc/jwt
 ```js
 const { sign } = require("@ndiinginc/jwt");
 
-const token = sign(
-    { alg: "HS256", typ: "JWT" },
-    { sub: "1234567890", name: "Ndiing", exp: Math.floor(Date.now() / 1000) + 3600 },
-    "secret-key-kamu"
-);
+const token = sign({ alg: "HS256", typ: "JWT" }, { sub: "1234567890", name: "Ndiing", exp: Math.floor(Date.now() / 1000) + 3600 }, "secret-key-kamu");
 
 console.log(token);
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxxxx.yyyyy
@@ -81,11 +77,11 @@ const result = verify(token, publicKey);
 
 ### `sign(header, payload, secret)`
 
-| Parameter | Tipe | Keterangan |
-|---|---|---|
-| `header` | `Object` | Wajib punya properti `alg` (salah satu algoritma yang didukung) |
-| `payload` | `Object` | Klaim/data yang mau disisipkan ke token |
-| `secret` | `String \| Buffer \| KeyObject` | Secret key (HMAC) atau private key (RSA/ECDSA/PSS) |
+| Parameter | Tipe                            | Keterangan                                                      |
+| --------- | ------------------------------- | --------------------------------------------------------------- |
+| `header`  | `Object`                        | Wajib punya properti `alg` (salah satu algoritma yang didukung) |
+| `payload` | `Object`                        | Klaim/data yang mau disisipkan ke token                         |
+| `secret`  | `String \| Buffer \| KeyObject` | Secret key (HMAC) atau private key (RSA/ECDSA/PSS)              |
 
 Return: `String` — token JWT (`header.payload.signature`).
 
@@ -93,9 +89,9 @@ Melempar error: `INVALID_HEADER`, `INVALID_PAYLOAD`, `INVALID_SECRET`, `INVALID_
 
 ### `decode(token)`
 
-| Parameter | Tipe | Keterangan |
-|---|---|---|
-| `token` | `String` | Token JWT yang mau dibaca |
+| Parameter | Tipe     | Keterangan                |
+| --------- | -------- | ------------------------- |
+| `token`   | `String` | Token JWT yang mau dibaca |
 
 Return: `{ data, header, payload, signature }` — **tidak** memverifikasi signature maupun klaim.
 
@@ -103,10 +99,10 @@ Melempar error: `INVALID_TOKEN`.
 
 ### `verify(token, secret)`
 
-| Parameter | Tipe | Keterangan |
-|---|---|---|
-| `token` | `String` | Token JWT yang mau diverifikasi |
-| `secret` | `String \| Buffer \| KeyObject` | Secret key (HMAC) atau public key (RSA/ECDSA/PSS) |
+| Parameter | Tipe                            | Keterangan                                        |
+| --------- | ------------------------------- | ------------------------------------------------- |
+| `token`   | `String`                        | Token JWT yang mau diverifikasi                   |
+| `secret`  | `String \| Buffer \| KeyObject` | Secret key (HMAC) atau public key (RSA/ECDSA/PSS) |
 
 Return: `{ header, payload, verified }`.
 
@@ -114,12 +110,12 @@ Melempar error: `INVALID_TOKEN`, `INVALID_SECRET`, `INVALID_ALGORITHM`, `INVALID
 
 ## Daftar Algoritma yang Didukung
 
-| Algoritma | Tipe Key | Keterangan |
-|---|---|---|
-| `HS256` / `HS384` / `HS512` | Shared secret (string) | HMAC dengan SHA-256/384/512 |
-| `RS256` / `RS384` / `RS512` | RSA key pair | RSASSA-PKCS1-v1_5 |
-| `ES256` / `ES384` / `ES512` | EC key pair | ECDSA, encoding `ieee-p1363` |
-| `PS256` / `PS384` / `PS512` | RSA key pair | RSASSA-PSS, salt length = digest |
+| Algoritma                   | Tipe Key               | Keterangan                       |
+| --------------------------- | ---------------------- | -------------------------------- |
+| `HS256` / `HS384` / `HS512` | Shared secret (string) | HMAC dengan SHA-256/384/512      |
+| `RS256` / `RS384` / `RS512` | RSA key pair           | RSASSA-PKCS1-v1_5                |
+| `ES256` / `ES384` / `ES512` | EC key pair            | ECDSA, encoding `ieee-p1363`     |
+| `PS256` / `PS384` / `PS512` | RSA key pair           | RSASSA-PSS, salt length = digest |
 
 ## Catatan Keamanan
 

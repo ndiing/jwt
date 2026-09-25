@@ -211,17 +211,17 @@ const verifier = {
  */
 
 /**
- * 
- * @typedef Header 
+ *
+ * @typedef Header
  * @property {signerKey} alg
  * @property {"JWT"} typ
  */
 
 /**
- * 
- * @param {Header} header 
- * @param {Object} payload 
- * @param {String} secret 
+ *
+ * @param {Header} header
+ * @param {Object} payload
+ * @param {String} secret
  * @returns {String}
  */
 function sign(header, payload, secret) {
@@ -245,8 +245,8 @@ function sign(header, payload, secret) {
 }
 
 /**
- * 
- * @param {String} token 
+ *
+ * @param {String} token
  * @returns {Object}
  */
 function decode(token) {
@@ -279,9 +279,9 @@ function decode(token) {
 }
 
 /**
- * 
- * @param {String} token 
- * @param {String} secret 
+ *
+ * @param {String} token
+ * @param {String} secret
  * @returns {Object}
  */
 function verify(token, secret) {
